@@ -1,0 +1,50 @@
+{
+  "name": "katrinas-webportfolio",
+  "version": "1.0.0",
+  "description": "Welcome to Katrina’s web portfolio—a dynamic showcase of her expertise in front-end and back-end development, mentorship, and UX/UI design. With a versatile skill set and a passion for creating seamless digital experiences, Katrina bridges the gap between functionality and aesthetics, ensuring every project delivers real value.",
+  "main": "ng for a developer, a designer, or a mentor, Katrina’s work reflects her commitment to excellence, adaptability, and a user-first approach to problem-solving.",
+  "scripts": {
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
+    "build": "webpack --config webpack/webpack.config.js --env env=prod",
+    "lint": "eslint . --ext .ts,.tsx --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katros94/katros94.github.io.git"
+  },
+  "keywords": [
+    "webportfolio"
+  ],
+  "author": "katrina rosales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katros94/katros94.github.io/issues"
+  },
+  "homepage": "https://github.com/katros94/katros94.github.io#readme",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "html-webpack-plugin": "^5.6.3",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "uglify-js": "^3.19.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  }
+}
