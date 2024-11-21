@@ -35,22 +35,29 @@ function HideOnScroll(props: Props) {
   );
 }
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#1976d2',
-    },
-  },
-});
-
 const App = (props: Props) => {
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+      primary: {
+        main: '#1976d2',
+      },
+    },
+  });
+
+  const appStyle = {
+    backgroundColor: '#F7F7F8',
+    height: '100vh',           // Ensure it covers the full viewport height
+    margin: 0,
+  };
+
   return (
+    <div style={appStyle}>
     <React.Fragment>
       <CssBaseline />
       <ThemeProvider theme={darkTheme}>
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar style={{backgroundColor: "#F7F7F8", color: "#000"}}>
           <Toolbar>
             <Typography variant="h6" component="div">
               Katrinas web portfolio
@@ -70,6 +77,7 @@ const App = (props: Props) => {
       </Container>
       </ThemeProvider>
     </React.Fragment>
+    </div>
   )
 };
 
